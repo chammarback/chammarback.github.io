@@ -9,7 +9,8 @@
 
 body {
     width: 100%;
-    font-family: 'Robotic', sans-serif;   
+    font-family: 'Poppins', sans-serif;   
+    background-color: whitesmoke;
 }
 
 
@@ -30,6 +31,14 @@ body {
 
 /* ADMINPAGE                                   ADMINPAGE            */
 
+/*     .bx-search {
+font-size: 1.5rem;
+position: absolute;
+font-size: 1.5rem;
+left: 0;                     SÖKikonen
+bottom: 1px;
+padding-left: 80px;
+   }  */
 
 
 
@@ -44,30 +53,21 @@ body {
 }
 
 .search-bar {
-    padding-left: 10px;
-    max-width: 200px;
-    display: inline-block;
-    flex: auto;
+    /* padding-left: 10px; */
+    max-width: 100%; /*  */
+display: inline-block;
+    flex-flow: 1;
+    min-width: 150px;
 }
 
-/*     .bx-search {
-font-size: 1.5rem;
-position: absolute;
-font-size: 1.5rem;
-left: 0;                     SÖKikonen
-bottom: 1px;
-padding-left: 80px;
-   }  */
-   
 
 #sokruta {
     background-color: whitesmoke;
-    width: 200px;
   
-    max-width: 300px;
+    max-width: 100%;      /*  */
     padding: 10px;
     padding-left: 40px;
-    border-radius: 20px;
+    border-radius: 10px;
     border: 1px solid grey;
     height: 35px;
     background-image: url(/img/search.png);
@@ -76,7 +76,9 @@ padding-left: 80px;
     font-style: inherit;
     
 }
-
+.icons, .bxs-heart {
+    color: rgb(82, 8, 8);
+}
 
 .icons {
     flex: 1 auto;
@@ -93,18 +95,16 @@ display:flex;
    /* max-width: 400px; */
   /*  width:100%; */
    margin: 5px auto;
-   border-radius: 20px;
+   border-radius: 10px;
 
 }
 
-.flex-container .logo img {
-    /* padding: 5px; */
-    margin: 10px;
+    #tophead {
     display: flex;
     margin: auto;
-  max-width: 100%;
-  height: auto;
-  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
 }
 
 
@@ -336,7 +336,7 @@ a:visited {
 
 /* PRODDUUUUUUUUUUUUUUKT GRIDDDDDDDDDDDDDDDDDDD */
 .productcard {
-margin: 30px;
+margin: 20px;
 }
 
 .grid-product {
@@ -440,7 +440,7 @@ margin-top: 30px;
     display: flex;
     max-height: 100%;
     max-width: 100%;
-    margin: 30px;
+    margin: 20px;
     gap: 60px;
   }
   
@@ -576,32 +576,58 @@ details p {
 }
 
     .flex-container {
-      justify-content: center; 
+      justify-content: space-between; 
       flex-wrap: wrap;
+    max-width: 700px;
+    max-height: 300px;
+      margin: auto;
+
     }
 
     .search-bar, #sokruta {
-        justify-content: start;          /* centrerar dessa när det är miniläge */
+        justify-content: center;          /* centrerar dessa när det är miniläge */
         /* text-align: center; */
         flex-grow: 1;
+        width: 160px;
     }
+
+
+   
+    .product1, #prodpic {
+        min-width: 250px;
+    }
+
+
     #prodpara {
         display: none;
     }
     
-
     .logo, #tophead {
         max-width: 100%;
-        max-height: 100%;
+       max-width: 400px;
+       max-height: 300px;
         flex-grow: 1;
-        object-fit: contain;
+    }
+
+
+/*      #tophead {
+        max-width: 100%;
+        max-height: 250px;
+        flex-grow: 1;
+        object-fit: contain; } */
+           
+
+    .logo {
+        max-width: 100%;
+        max-height: 250px;
+        flex-grow: 1;
 
     }
     .hero2, h1, p {
         font-size: 1.5rem;
     }
 
-    }
+}
 
 @media (min-width: 640px) and (max-width: 1024px) {
     .grid-product {
@@ -633,7 +659,11 @@ details p {
 
 }
 
-
+@media (min-width: 432px) {
+    .search-bar {
+padding-left: 10px;
+    }
+}
 
     @media (min-width: 640px) {           /*  efter 640px blir det.. */
         .navlinks {
@@ -703,6 +733,10 @@ details p {
          .produktikon2 {
             display:none;
             }
+
+            .search-bar {
+                padding-left: 10px;
+                    }
 
     }
 
