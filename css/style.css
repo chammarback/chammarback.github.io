@@ -1,0 +1,808 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    
+
+
+body {
+    width: 100%;
+    font-family: 'Robotic', sans-serif;   
+}
+
+
+/* ADMINPAGE                                   ADMINPAGE            */
+
+
+.admin-header {
+    color:white;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid red;
+}
+
+
+
+
+
+/* ADMINPAGE                                   ADMINPAGE            */
+
+
+
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(199, 121, 121);
+}
+
+.search-bar {
+    padding-left: 10px;
+    max-width: 200px;
+    display: inline-block;
+    flex: auto;
+}
+
+/*     .bx-search {
+font-size: 1.5rem;
+position: absolute;
+font-size: 1.5rem;
+left: 0;                     SÖKikonen
+bottom: 1px;
+padding-left: 80px;
+   }  */
+   
+
+#sokruta {
+    background-color: whitesmoke;
+    width: 200px;
+  
+    max-width: 300px;
+    padding: 10px;
+    padding-left: 40px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    height: 35px;
+    background-image: url(/img/search.png);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    font-style: inherit;
+    
+}
+
+
+.icons {
+    flex: 1 auto;
+    display: flex;
+    font-size: 1.5rem;
+    gap: 10px;
+    padding: 10px;
+    color: black;
+    justify-content: right;
+}
+
+.logo {
+display:flex;
+   /* max-width: 400px; */
+  /*  width:100%; */
+   margin: 5px auto;
+   border-radius: 20px;
+
+}
+
+.flex-container .logo img {
+    /* padding: 5px; */
+    margin: 10px;
+    display: flex;
+    margin: auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+
+a {
+    color: black;
+}
+
+a:visited {
+    color:black;
+}
+
+#sokruta:hover {
+    background-color: skyblue;
+}
+
+
+
+
+
+.navbar {
+    padding: 10px;
+    background-color: tomato;
+}
+
+.navlinks {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navlinks li {
+    margin: 5px;
+}
+
+.navlinks a:hover {
+    opacity: 80%;
+}
+
+.navlinks a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* PRODUKTSIDA */
+.product1, .product2 {
+    border: 2px solid tomato;
+}
+
+.productcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid red;
+    text-align: left;
+    margin: 10px;
+}
+
+.product1 {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: aquamarine;
+    display: flex;
+    position: relative;
+    max-height: 100%;
+}
+
+.produktikon2 {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.product2 {
+    justify-content: center;
+    align-items: center;
+    display: block;
+    padding-top: 15px;
+}
+
+#prodpic {
+    justify-content: center;
+    max-width: 100%;
+    flex: auto;
+    max-height: 100%;
+    object-fit: cover;
+
+
+}
+
+.prodknapp {
+    display: block;
+    margin: auto;
+    width: 95%;
+    height: 1.8rem;
+    font: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(216, 216, 216);
+}
+.prodknapp:hover {
+    background-color: rgba(216, 216, 216, 0.50);
+}
+
+.prodknapp:active {
+    background-color: rgb(175, 175, 175);
+}
+
+.product2 > p:first-child  {
+    font-size: 1.3rem;
+}
+
+.product2 > p:nth-child(3) {
+    font-style: italic;
+}
+
+
+/*  PRODUKTSIDA */
+
+
+/* HEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEERO */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid black;
+    margin-left: 40px;
+    margin-right: 40px;
+    max-height: 600px;                           /* dssssssssss */
+    margin-top: 30px;
+}
+
+.hero1 {
+    background-color: skyblue;
+    /* padding: 10px; */
+   /*  margin: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 500px;
+}
+
+.hero1, .hero2 {
+    flex: 1 1 100%;
+}
+
+.hero2 {
+    padding-bottom: 10px;
+}
+
+.hero2 {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    padding-top: 15px;
+}
+
+#heropic {
+    max-width: 100%;
+    height:auto;
+    flex: content;
+    max-height: 500px;
+    object-fit: cover;
+    /* flex-grow: 1; */
+}
+
+/* HEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEERO */
+/* SPOTTTTTTTTTTTTTTTTS */
+
+
+.spots {
+    display: none;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.spot-container {
+    flex-direction: column;
+    display:flex;
+    align-items: center;
+   /*  margin: 10px; */
+   position: relative;
+   width: 400px;
+   margin: 10px;
+}
+
+.spot-container img {
+    display: block;
+    max-height: 350px;
+  /*   align-self: center; */
+    width: 100%;
+    height: auto;
+}
+
+.spot-container a {
+    position: absolute;
+    top: 120px;
+    left: 90px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.spot-container a:hover {
+    opacity: 80%;
+}
+
+
+
+/* SPOTTTTTTTTTTTTTTTTS */
+
+
+
+
+
+
+/* PRODDUUUUUUUUUUUUUUKT GRIDDDDDDDDDDDDDDDDDDD */
+.productcard {
+margin: 30px;
+}
+
+.grid-product {
+    display: grid;
+    grid-gap: 20px;
+    padding: 10px;
+   max-width: 100%;
+   margin: 30px;
+}
+
+
+
+.flex-product-1 > img {
+    max-width: 500px;                 /* REZISEEEEEEEEEEE THIS */
+}
+
+.flex-product-1 {
+    border: 2px solid blue;        /* RESZIIIIIIIIIIISE THIS */
+    width: 100%;
+    position: relative;                /*  till ikonen */
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.produktikon {
+    position: absolute;
+    font-size: 1.8rem;
+    bottom: 15px;
+    right: 15px;
+}
+
+.nyhet {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.levis {
+    font-size: 1rem;
+    align-self: flex-start;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.gridflex {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 100%;                       /* REZISE THISFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF */
+margin: 0 auto;
+background-color: skyblue;
+border: 2px solid red;
+margin-top: 30px;
+}
+
+.gridflex img
+{
+    flex: auto;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    flex-grow: 1;
+    object-fit: contain;
+}
+
+.textcontainer {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+
+/* PRODDUUUUUUUUUUUUUUKT GRIDDDDDDDDDDDDDDDDDDD */
+
+/* PRODUKT GRID LIKNANDE PRODUKTER */
+#prodpara {
+ text-align: center;
+ font-size: 1.8rem;
+ margin-top: 60px;
+}
+
+.helv-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 1px; 
+    border: 2px solid black;
+    width: 100%;
+  }
+  
+  .helvete {
+    border: 4px solid purple;
+    display: flex;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 30px;
+    gap: 60px;
+  }
+  
+.rowtwo {
+    display: flex;
+    border: 3px solid purple;
+    height: 50px;
+    justify-content: center;
+}
+
+
+  .row-container {
+    display: flex;
+     /* Space between row items */
+    border: 2px solid green;
+    height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+
+  .imagecontainer > img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: cover;
+  }
+
+  
+  .imagecontainer {
+    background-color: lightblue; 
+    text-align: center;
+    max-width: 100%;
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .rowone {
+    border: 2px solid pink;
+    display:flex;
+    flex: 1;
+
+  }
+
+/* PRODUKT GRID LIKNANDE PRODUKTER */
+
+
+/* EXPRESS / RETURER / SÄKRA BETALNINGAR / NYHETER */
+    .grid-item > p {
+    font-size: 1.2rem;
+}
+
+    .grid-item > i {
+    font-size: 2.4rem;
+    padding-right: 10px;
+    color: rgb(51, 51, 51);
+    justify-content: center;
+  }
+
+  .grid-item {
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    text-align: center;
+    align-items: center;
+  /*   margin: auto; */
+   max-width: 320px;
+  /*  width: 300px; */
+   border: 2px solid pink;
+  }
+
+  .grid-container {
+    display: grid;
+    gap: 15px;
+    padding: 10px;
+    margin: 30px;
+    justify-content: start;
+    border: 2px solid red;
+  }
+/* ACCORDION CONTAINER */
+
+.accordion {
+    display:flex;
+    flex-direction:column;
+    /* gap: 10px; */
+    width: 100%;
+    border: 1px solid grey;
+}
+
+
+details summary  {
+    font-size: 1rem;
+    cursor: pointer;
+    list-style: none;
+    padding: 10px;
+  /*   border-bottom: 1px solid black; */
+}
+
+details {
+   border: 1px solid grey;
+}
+
+details[open] summary {
+    background-color: skyblue;
+}
+
+details p {
+    font-size: 0.9rem;
+    padding: 10px;
+    padding-left: 15px;
+}
+
+#copyright {
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+/* QUEEEEEEEEEEEEEEEERIES */
+
+@media (max-width: 640px) {              /* innan 640px + blir det */
+
+    .grid-product {
+        grid-template-columns: 1fr;         /* Ba en kolumn till 640+ */
+    }
+
+.helv-container {                             /*  inga liknande produkter innan 640px */
+    display: none;
+}
+
+    .flex-container {
+      justify-content: center; 
+      flex-wrap: wrap;
+    }
+
+    .search-bar, #sokruta {
+        justify-content: start;          /* centrerar dessa när det är miniläge */
+        /* text-align: center; */
+        flex-grow: 1;
+    }
+    #prodpara {
+        display: none;
+    }
+    
+
+    .logo, #tophead {
+        max-width: 100%;
+        max-height: 100%;
+        flex-grow: 1;
+        object-fit: contain;
+
+    }
+    .hero2, h1, p {
+        font-size: 1.5rem;
+    }
+
+    }
+
+@media (min-width: 640px) and (max-width: 1024px) {
+    .grid-product {
+        grid-template-columns: repeat(2, 1fr);             /* 2 kolumner  */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;                   /* Express ändrar till 2 2 */
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        margin: 30px;
+      }
+
+      .rowtwo > p {
+        margin: auto;
+}
+
+      .grid-item {
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+      }
+
+      #prodpara {
+        
+        font-size: 1.3rem;
+        
+       }
+
+}
+
+
+
+    @media (min-width: 640px) {           /*  efter 640px blir det.. */
+        .navlinks {
+            flex-direction: row; 
+            justify-content: left;
+        }
+        .navlinks li {
+            padding-left: 50px;
+        }
+        
+        .accordion {                             /*  ändrar till row ist för column  */
+            flex-direction: row;
+            justify-content: left;
+            gap: 50px;
+            height: 250px;
+            background-color: rgb(194, 194, 194);
+            padding-top: 20px;
+            border: none;
+        }
+
+        .accord1, .accord2, .accord3 {
+            width: 150px;
+        }
+
+        details[open] summary {                           /*  tar bort bakgrundsfärgen ifrån listan */ 
+            background-color: transparent;
+        }
+        
+        details {
+            flex-basis:10%;                              /* stretchar ut dem */
+            padding-left: 30px;
+            border: none;
+        }
+        
+          details summary {                         /*  gör så att det inte går att klicka på summaryn */
+            /* pointer-events: none;                         går ej klicka.. */         
+            border: none;  
+            background-color: transparent;
+            font-weight: 550;
+          }
+
+          #copyright {
+            background-color: rgb(194, 194, 194);
+          }          
+
+         .productcard {
+            flex-direction: row; 
+            justify-content: left;
+         }
+
+         .product1 {                 /*  tar upp 44% av ytan */
+            flex: 0 0 44%;
+            max-width: 380px;
+         }
+
+         .product2 {
+            flex: 1;                /* TAR UPP RESTEN AV SPACE */
+            max-width: 500px;
+            padding-left: 20px;
+         }
+
+         .prodknapp {
+            width: 150px;
+            margin: 1px;
+         }
+
+         .produktikon2 {
+            display:none;
+            }
+
+    }
+
+    @media (min-width: 1024px) {                        /*  över 1024px visas ist */
+        .hero {
+            flex-wrap: nowrap; /* Stoppar wrapping när skärmen är större än 1024px */
+        }
+        .hero1 {
+        flex: 0 0 60%;           /*  bilden ska ta 60% av skärmen över 1024px */
+    }
+
+     .hero2 {
+        order: -1;              /*  så kära texten kommer till vänster */
+     }
+
+     .spots {                     /*  över 1024 så visas spotsen ist för display:none */
+        display: flex;
+     }
+    .grid-product {
+    grid-template-columns: 1fr 1fr 1fr 1fr;          /*  4 kolumner  */
+    }
+
+    .grid-container {                                     /* Express ändrar till 4 columner */
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        margin: 10px;
+       
+    }
+        .grid-item {
+            justify-content: center;
+            text-align: center;
+            margin: auto;
+          }
+
+          .productcard {
+            flex-direction: row; 
+            justify-content: left;
+            height: 600px
+
+         }
+
+         #prodpic {
+            object-fit: cover;          
+            max-height: 100%;
+            max-width: 650px;
+            min-height: 100%;
+         }
+         .product1 {                 /*  tar upp 44% av ytan */
+            flex: 0 0 44%;
+            max-width: 100%;
+         }
+
+         .product2 {
+            /* flex: 1;    */             /* TAR UPP RESTEN AV SPACE */
+            max-width: 600px;
+            padding-left: 20px;
+         }
+
+         .product1 {                 /*  tar upp 44% av ytan */
+           /*  flex: 0 0 70%; */
+            max-width: 550px;
+         }
+
+         .product2 {
+            flex: 1;                /* TAR UPP RESTEN AV SPACE */
+            max-width: 500px;
+            padding-left: 20px;
+         }
+
+        .helv-container {
+        max-width: 400px;
+        max-height: 600px;
+        }
+    
+        #prodbild {
+        max-height: 500px;
+        max-width: 400px;
+        }
+
+        .imagecontainer {
+            max-height: 500px;
+            max-width: 400px;
+            border: 2px solid red;
+        }
+
+        .row-container {
+            max-width: 400px;
+        }
+
+        .helvete {
+            justify-content:space-between;
+            gap: 40px;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+/*          .productcard {
+            max-height: 700px;
+         } */
+
+    }
+    
