@@ -4,7 +4,14 @@
     box-sizing: border-box;
 }
 
-    
+   
+.bx {
+    transition: transform 0.3s ease;
+}
+
+.bx:hover {
+    transform: scale(1.5);
+}
 
 
 body {
