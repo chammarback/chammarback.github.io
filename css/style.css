@@ -17,7 +17,7 @@
 body {
     width: 100%;
     font-family: 'Poppins', sans-serif;   
-    background-color: whitesmoke;
+    background-color: #FFE3E1;
 }
 
 
@@ -42,12 +42,112 @@ body {
 
 .kunduppgifter {
     text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 /* FORM--------------------------------------------------------- */
 /* CHECKOUT----------------------------------------------------------------------------------------- */
 
+/* CHECKOUT               FORM------------------- */
+input[type="email"],
+input[type="text"] {
+    width: 90%;
+    padding: 5px;
+}
 
+input[type="number"] {
+    padding: 5px;
+    /* width: 50%; */
+}
+
+.checkout {
+    margin: 20px;
+    gap: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-form {
+    padding: 10px;
+}
+
+
+.buy {
+    font-size: 1.3rem;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    background: dodgerblue;
+    color: white;
+    border-radius: 4px;
+    font-family: inherit;
+    margin: auto;
+    display:block;
+   }
+   
+   .buy:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(30,144,255,1) 0%, rgba(0,212,255,1) 100%);
+   }
+   
+   .buy:active {
+    transform: translate(0em, 0.2em);
+   }
+
+
+/* .buy {
+    margin: auto;
+    display: block;
+    padding: 5px;
+    width: 180px;
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid grey;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease;
+} */
+
+@media (min-width: 641px) {
+    #stad {
+        width: 50%;
+    }
+    .kunduppgifter {
+        text-align: start;
+        margin-left:20px;
+        margin-top: 10px;
+    }
+     .form-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+     }
+
+.grp-1, .grp-2 {
+    flex:1;
+    min-width: 300px;
+}
+
+.grp-3 {
+    flex-basis: 50%;
+}
+
+    }
+
+
+/* CHECKOUT               FORM------------------- */
 
 .table {
     max-width: 500px;
@@ -173,7 +273,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgb(199, 121, 121);
+    background-color: #FF9494;
 }
 
 .search-bar {
@@ -186,18 +286,18 @@ body {
 
 
 #sokruta {
-    background-color: whitesmoke;
+    background-color: #FF9494;
   
     max-width: 100%;      /*  */
     padding: 10px;
     padding-left: 40px;
     border-radius: 10px;
-    border: 1px solid grey;
     height: 35px;
     background-image: url(/img/search.png);
     background-position: 10px;
     background-repeat: no-repeat;
-    font-style: inherit;
+    font-family: inherit;
+    border: none;
     
 }
 .icons, .bxs-heart {
@@ -241,16 +341,12 @@ a:visited {
 }
 
 #sokruta:hover {
-    background-color: skyblue;
+    background-color: #FFE3E1;
 }
-
-
-
-
 
 .navbar {
     padding: 10px;
-    background-color: tomato;
+    background-color: #FFD1D1;
 }
 
 .navlinks {
@@ -276,15 +372,14 @@ a:visited {
 }
 
 /* PRODUKTSIDA */
-.product1, .product2 {
-    border: 2px solid tomato;
-}
+/* .product1, .product2 {
+
+} */
 
 .productcard {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 2px solid red;
     text-align: left;
     margin: 10px;
 }
@@ -328,7 +423,7 @@ a:visited {
     margin: auto;
     width: 95%;
     height: 1.8rem;
-    font: inherit;
+    font-family: inherit;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
@@ -343,7 +438,7 @@ a:visited {
 }
 
 .product2 > p:first-child  {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .product2 > p:nth-child(3) {
@@ -361,7 +456,6 @@ a:visited {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    border: 2px solid black;
     margin-left: 20px;
     margin-right: 20px;
     max-height: 600px;                           /* dssssssssss */
@@ -388,7 +482,7 @@ a:visited {
 }
 
 .hero2 {
-    background-color: red;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -487,10 +581,9 @@ margin: 15px;
 }
 
 .flex-product-1 {
-    border: 2px solid blue;        /* RESZIIIIIIIIIIISE THIS */
     width: 100%;
     position: relative;                /*  till ikonen */
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     max-width: 500px;
 }
 
@@ -526,8 +619,7 @@ align-items: center;
 justify-content: center;
 width: 100%;                       /* REZISE THISFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF */
 margin: 0 auto;
-background-color: skyblue;
-border: 2px solid red;
+background-color: #FFF5E4;
 margin-top: 30px;
 }
 
@@ -664,8 +756,6 @@ margin-top: 30px;
     align-items: center;
   /*   margin: auto; */
    max-width: 320px;
-  /*  width: 300px; */
-   border: 2px solid pink;
   }
 
   .grid-container {
@@ -674,7 +764,6 @@ margin-top: 30px;
     padding: 10px;
     margin: 30px;
     justify-content: start;
-    border: 2px solid red;
   }
 /* ACCORDION CONTAINER */
 
@@ -771,7 +860,7 @@ details p {
     }
 
     .product2 > p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
    
     .product1, #prodpic {
