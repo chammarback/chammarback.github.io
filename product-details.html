@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
-    <title>Freaky Fashion</title>
+    <title>Product Details</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,7 +21,6 @@
 <!-- "https://placehold.co/400x200" -->
 
 <body>
-
     <header>
         <div class="flex-container">
             <div class="logo">
@@ -70,52 +69,51 @@
         </div>
 
 
-        <p id="prodpara">Liknande Produkter</p>
+
         <!-- PRODUCT CARD 3X -->
 
-        <div class="helvete">
-            <div class="helv-container">
-                <a href="">
-                    <div class="imagecontainer"><img id="prodbild" src="https://placehold.co/300x400"
-                            alt="liknande-produkter" width="300" height="400"></div>
-                </a>
-                <div class="row-container">
-                    <div class="rowone">Svart T-shirt</div>
-                    <div class="rowtwo">
-                        <p>199SEK</p>
-                    </div>
-                </div>
-                <p>Levis</p>
+
+
+        <div class="slider">
+            <div class="slidertext">
+                <p>Liknande produkter</p>
             </div>
-            <div class="helv-container">
-                <a href="">
-                    <div class="imagecontainer"><img id="prodbild" src="https://placehold.co/300x400"
-                            alt="liknande-produkter" width="300" height="400"></div>
-                </a>
-                <div class="row-container">
-                    <div class="rowone">Svart T-shirt</div>
-                    <div class="rowtwo">
-                        <p>199SEK</p>
-                    </div>
+
+            <input type="radio" name="slider" id="slide1" checked />
+            <input type="radio" name="slider" id="slide2" />
+            <input type="radio" name="slider" id="slide3" />
+
+            <div class="slides">
+                <!-- SLIDE 1 -->
+                <div class="slide">
+                    <a href="#link1"><img src="https://placehold.co/300x400" alt="Bild 1" /></a>
+                    <a href="#link2"><img src="https://placehold.co/300x400" alt="Bild 2" /></a>
+                    <a href="#link3"><img src="https://placehold.co/300x400" alt="Bild 3" /></a>
                 </div>
-                <p>Levis</p>
+                <!-- SLIDE 2 -->
+                <div class="slide">
+                    <a href="#link4"><img src="https://placehold.co/300x400" alt="Bild 4" /></a>
+                    <a href="#link5"><img src="https://placehold.co/300x400" alt="Bild 5" /></a>
+                    <a href="#link6"><img src="https://placehold.co/300x400" alt="Bild 6" /></a>
+                </div>
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <a href="#link7"><img src="https://placehold.co/300x400" alt="Bild 7" /></a>
+                    <a href="#link8"><img src="https://placehold.co/300x400" alt="Bild 8" /></a>
+                    <a href="#link9"><img src="https://placehold.co/300x400" alt="Bild 9" /></a>
+                </div>
             </div>
-            <div class="helv-container">
-                <a href="">
-                    <div class="imagecontainer"><img id="prodbild" src="https://placehold.co/300x400"
-                            alt="liknande-produkter" width="300" height="400"></div>
-                </a>
-                <div class="row-container">
-                    <div class="rowone">Svart T-shirt</div>
-                    <div class="rowtwo">
-                        <p>199SEK</p>
-                    </div>
-                </div>
-                <div class="test">
-                    <p>Levis</p>
-                </div>
+
+            <!-- NAVIGERINGSKNAPPAR -->
+            <div class="nav-container">
+                <label for="slide1" class="nav"></label>
+                <label for="slide2" class="nav"></label>
+                <label for="slide3" class="nav"></label>
             </div>
         </div>
+
+
+
         <!-- PRODUCT CARD 3X -->
 
         <div class="grid-container">

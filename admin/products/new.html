@@ -39,7 +39,7 @@
                 <fieldset>
                     <label for="name">Namn</label>
                     <br>
-                    <input type="text" placerholder ... id="name" name="name">
+                    <input type="text" placerholder ... id="name" name="name" required>
                     <br>
                     <br>
                     <label for="message">Your Message:</label>
@@ -55,13 +55,21 @@
 
                     <label for="SKU">SKU</label>
                     <br>
-                    <input type="text">
+                    <input type="text" pattern="[A-Z]{3}[0-9]{3}" placeholder="XXX111" required>
                     <br>
                     <br>
                     <label for="Pris">Pris</label>
                     <br>
                     <input type="number">
-                    <br><br>
+                    <br>
+                    <br>
+                    <!-- adderat datum för VG -->
+                    <label for="date">Publiceringsdatum</label>
+                    <br>
+                    <input type="date" id="date" name="date" required>
+                    <br>
+                    <br>
+                    <!-- adderat datum -->
                     <input type="checkbox" id="t-shirts" name="t-shirts" value="t-shirt">
                     <label for="kategori">T-Shirts</label><br>
                     <input type="checkbox" id="sommar" name="sommar" value="sommar">

@@ -46,7 +46,7 @@ font-size: 1.7rem;
     border-style: groove;
 }
 
-a {
+ .item-2 > a {
     display: block;
     margin: 25px;
     text-decoration: none;
@@ -120,6 +120,7 @@ padding: 0px;
 margin: 0px;
 border: 2px solid rgba(0, 0, 0, 0.80);
 border-collapse: collapse;
+text-align: start;
 }
 
 
@@ -127,6 +128,7 @@ th {
     background-color: grey;
     border: 2px solid rgba(0, 0, 0, 0.80);
     font-weight: 500;
+    text-align: start;
 }
 
 th, td {
@@ -141,8 +143,19 @@ td {
     border-left: 2px solid rgba(0, 0, 0, 0.80);
 }
 
+.bx-edit-alt, .bx-trash {
+color: black;
+}
 
+.bx:hover {
+    opacity: 60%;
+}
 
+table tr td:nth-child(4),
+table tr th:nth-child(4) {
+ width: 130px;
+ text-align: center;
+}
 
 /* NEW PRODUCT PAGE               ------------------------- */
 
@@ -158,20 +171,9 @@ fieldset {
     border: none;
 }
 
-/* input[type=file] {
-                 går ej styla
-} */
-
-::-webkit-outer-spin-button,
-::-webkit-inner-spin-button {
-    -webkit-appearance: none;                    
-    margin: 0;
-} 
-                             /*  något skit jag googlade fram för att få bort upp och ner pilarna.. */
-
-/* input[type=number] {
-    -moz-appearance: textfield;
-}  */
+input[type="date"] {
+    width: 120px;
+}
 
 
 
