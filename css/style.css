@@ -21,16 +21,6 @@ body {
 }
 
 
-/* ADMINPAGE                                   ADMINPAGE            */
-
-
-.admin-header {
-    color:white;
-    background-color: black;
-    padding: 20px;
-    text-align: center;
-    border: 2px solid red;
-}
 
 
 
@@ -38,22 +28,17 @@ body {
 
 
 
-/* FORM--------------------------------------------------------- */
-
-.kunduppgifter {
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-/* FORM--------------------------------------------------------- */
-/* CHECKOUT----------------------------------------------------------------------------------------- */
-
-/* CHECKOUT               FORM------------------- */
+/* CHECKOUT           --------------------------------------------    FORM------------------- */
 input[type="email"],
 input[type="text"] {
     width: 90%;
     padding: 5px;
+}
+
+.kunduppgifter {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 input[type="number"] {
@@ -70,6 +55,7 @@ input[type="number"] {
     display: flex;
     flex-direction: column;
     margin-left: 5px;
+    max-width: 1000px;
 }
 
 .input-group {
@@ -77,8 +63,13 @@ input[type="number"] {
     flex-direction: column;
 }
 
+#gata, #stad {
+    max-width: 500px;
+}
+
 .checkout-form {
     padding: 10px;
+    max-width: 1000px;
 }
 
 
@@ -105,21 +96,7 @@ input[type="number"] {
    }
 
 
-/* .buy {
-    margin: auto;
-    display: block;
-    padding: 5px;
-    width: 180px;
-    font-family: inherit;
-    font-size: 1.3rem;
-    font-weight: 500;
-    border-radius: 5px;
-    border: 1px solid grey;
-    cursor: pointer;
-    position: relative;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-    transition: all 0.3s ease;
-} */
+
 
 @media (min-width: 641px) {
     #stad {
@@ -136,7 +113,7 @@ input[type="number"] {
      }
 
 .grp-1, .grp-2 {
-    flex:1;
+    flex: 1;
     min-width: 300px;
 }
 
@@ -147,7 +124,7 @@ input[type="number"] {
     }
 
 
-/* CHECKOUT               FORM------------------- */
+/* CHECKOUT          -------------------------------------------------------     FORM------------------- */
 
 .table {
     max-width: 500px;
@@ -264,7 +241,7 @@ input[type="number"] {
 
  
 }
-/* CHECKOUT----------------------------------------------------------------------------------------- */
+/* CHECKOUT------------------------------------------------------------------------------------------------------ */
 
 
 .flex-container {
@@ -280,20 +257,20 @@ input[type="number"] {
     /* padding-left: 10px; */
     max-width: 100%; /*  */
     display: inline-block;
-    flex-flow: 1;
+    flex-flow: 1;                      /* hello ? */
     min-width: 150px;
 }
 
 
 #sokruta {
-    background-color: #FF9494;
+    /* background-color: #FF9494; */
   
-    max-width: 100%;      /*  */
+    max-width: 100%;     
     padding: 10px;
     padding-left: 40px;
     border-radius: 10px;
-    height: 35px;
-    background-image: url(/img/search.png);
+    height: 35px;  
+    background-image: url("https://img.icons8.com/?size=25&id=7695&format=png&color=000000");            
     background-position: 10px;
     background-repeat: no-repeat;
     font-family: inherit;
@@ -305,7 +282,7 @@ input[type="number"] {
 }
 
 .icons {
-    flex: 1 auto;
+    flex: 1 auto;                   
     display: flex;
     font-size: 1.5rem;
     gap: 10px;
@@ -316,8 +293,6 @@ input[type="number"] {
 
     .logo {
     display:flex;
-   /* max-width: 400px; */
-  /*  width:100%; */
    margin: 5px auto;
    border-radius: 10px;
 
