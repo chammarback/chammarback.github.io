@@ -35,11 +35,11 @@
 
         <div class="item item-3">
             <h2>Ny Produkt</h2>
-            <form action="/action_page.php">
+            <form action="#action_page.php">
                 <fieldset>
                     <label for="name">Namn</label>
                     <br>
-                    <input type="text" placerholder ... id="name" name="name" required>
+                    <input type="text" id="name" name="name" required>
                     <br>
                     <br>
                     <label for="message">Your Message:</label>
@@ -49,18 +49,18 @@
                     <br>
                     <label for="image">Bild</label>
                     <br>
-                    <input type="file" id="myFile" name="filename" accept=".png, .jpg, .jpeg">
+                    <input type="file" id="image" name="filename" accept=".png, .jpg, .jpeg">
                     <br>
                     <br>
 
                     <label for="SKU">SKU</label>
                     <br>
-                    <input type="text" pattern="[A-Z]{3}[0-9]{3}" placeholder="XXX111" required>
+                    <input id="SKU" type="text" pattern="[A-Z]{3}[0-9]{3}" placeholder="XXX111" required>
                     <br>
                     <br>
-                    <label for="Pris">Pris</label>
+                    <label for="pris">Pris</label>
                     <br>
-                    <input type="number">
+                    <input type="number" id="pris">
                     <br>
                     <br>
                     <!-- adderat datum för VG -->
@@ -71,13 +71,16 @@
                     <br>
                     <!-- adderat datum -->
                     <input type="checkbox" id="t-shirts" name="t-shirts" value="t-shirt">
-                    <label for="kategori">T-Shirts</label><br>
+                    <label for="t-shirts">T-Shirts</label><br>
+
                     <input type="checkbox" id="sommar" name="sommar" value="sommar">
-                    <label for="kategori">Sommar</label><br>
+                    <label for="sommar">Sommar</label><br>
+
                     <input type="checkbox" id="byxor" name="byxor" value="byxor">
-                    <label for="kategori"> Byxor</label><br>
+                    <label for="byxor"> Byxor</label><br>
+
                     <input type="checkbox" id="skor" name="skor" value="skor">
-                    <label for="kategori"> Skor</label><br>
+                    <label for="skor">Skor</label><br>
                     <br>
 
 

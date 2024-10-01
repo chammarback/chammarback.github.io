@@ -55,13 +55,36 @@ font-size: 1.7rem;
     border-style: groove;
 }
 
- .item-2 > a {
+.flex-2 > a {                 /* nyprodukt knapp */
+    cursor: pointer;
+    border: none;
+    font: inherit;
+    font-size: 0.9rem;
+    border: 1px groove grey;
+    background-color: whitesmoke;
+    padding: 3px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+    transition: 400ms;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.flex-2 > a:hover {
+    background-color: skyblue;
+}
+
+ .item-2 > a {                        /* sidebar knapp */
     display: block;
     margin: 25px;
     text-decoration: none;
     color: rgb(44, 44, 44);
     font-weight: 600;
     font-size: 1.1rem;
+}
+
+.item-2 > a:hover {
+    opacity: 60%;
 }
 
 /* Main */
@@ -120,6 +143,9 @@ button:hover {
     background-color: skyblue;
 }
 
+input[type=reset]:hover {
+    background-color: skyblue;
+}
 
 
 /*  Table */
